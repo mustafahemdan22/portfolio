@@ -18,7 +18,7 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
-.header{
+.header {
     position: fixed;
     left: 0;
     top: 0;
@@ -28,12 +28,17 @@ html{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+    background: transparent;
+    box-shadow: none;
 }
-.sticky{
-    border-bottom: 2px solid rgba(255,255,255,.1);
-    background: #0f0a0a;
+
+.sticky {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 10px rgba(234, 206, 107, 0.4);
 }
-.logo{
+
+.logo {
     font-size: 2.9rem;
     font-weight: 600;
     text-decoration: none;
@@ -41,7 +46,16 @@ html{
     transform: translateX(-100%);
     opacity: 0;
     animation: RightSlide 1s ease forwards;
+   
+        transition: transform 0.3s ease, color 0.3s ease;
+
 }
+
+.logo:hover {
+    color: #EACE6B;
+}
+
+
 @keyframes  RightSlide{
     0%{
         transform: translateX(-100%);
@@ -77,9 +91,10 @@ html{
     content: "";
     width: 0%;
     height: 2px;
-    background: #fbff00;
-    left: 0;
+    background:#EACE6B;
+    left: 50%;
     bottom: -12px;
+    transform: translate(-50%);
     transition: .5s ease;
 }
 
@@ -88,7 +103,7 @@ html{
     width: 100%;
 }
 .navbar a:hover,.navbar a.active{
-    color: #fbff00;
+    color:#EACE6B;
 }
 section{
     padding: 10rem
@@ -105,7 +120,7 @@ section{
     }
 }
 .navbar a:hover,.navbar a.active{
-    color: #fbff00;
+    color:#EACE6B;
 }
 
 section{

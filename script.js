@@ -44,3 +44,6 @@ window.addEventListener('scroll', () => {
   menubar.classList.remove('bx-x');
   Navbar.classList.remove('active');
 });
+ function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }

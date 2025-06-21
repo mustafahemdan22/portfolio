@@ -2,17 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mustafa Official</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mustafa | Front-End Developer Portfolio</title>
+
+    <!-- ✅ وصف الموقع -->
+    <meta name="description"
+        content="Official portfolio of Mustafa, a passionate Front-End Developer creating modern and responsive websites.">
+
+    <!-- ✅ كلمات مفتاحية -->
+    <meta name="keywords"
+        content="Mustafa, portfolio, front-end developer, web developer, HTML, CSS, JavaScript, React, مواقع">
+
+    <!-- ✅ اسم صاحب الموقع -->
+    <meta name="author" content="Mustafa Hemdan" />
+
+    <!-- ✅ OG Tags - عشان شكل الموقع في فيسبوك وغيره -->
+    <meta property="og:title" content="Mustafa | Front-End Developer Portfolio" />
+    <meta property="og:description" content="Check out my projects and web development skills." />
+    <meta property="og:image" content="https://your-domain.com/preview.jpg" />
+    <meta property="og:url" content="https://mustafahemdan22.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- ✅ CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ✅ Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
 
 <body>
     <!-- *************************Navbar************************* -->
     <header class="header">
-        <a href="#" class="logo">mustafa</a>
+        <a href="#" class="logo">MUSTAFA</a>
         <i class='bx bx-menu' id="menu" style='color:#ffffff'></i>
         <nav class="navbar">
             <a href="#home" style="--vlr:1" class="active">Home</a>
@@ -25,7 +52,7 @@
     <!-- *************************Home Section************************* -->
     <section class="home" id="home">
         <div class="text-content">
-            <h1>I'm mustafa Hemdan</h1>
+            <h1>I'm Mustafa Hemdan</h1>
             <div class="text-animation">
                 <h2>Frontend Developer</h2>
             </div>
@@ -34,14 +61,16 @@
                 JavaScript, and frameworks like React and Angular. Passionate about creating excellent user experiences
                 and optimizing website performance.</p>
             <div class="btn-section">
-                <button class="btn">Hire me</button>
-                <button class="btn">Let's Talk</button>
+                <button class="btn" onclick="scrollToSection('contact')">Hire me</button>
+                <button class="btn" onclick="window.open('https://wa.me/201553947102', '_blank')">Let's Talk</button>
             </div>
             <div class="social-media">
-                <i class='bx bxl-twitter' style="--vlr:7"></i>
+<a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
+  <i class='bx bxl-instagram'></i>
+</a>
 
-<a href="https://www.facebook.com/?locale=ar_AR">                <i class='bx bxl-facebook' style="--vlr:8"></i>
-</a>                <i class='bx bxl-youtube' style="--vlr:9"></i>
+                <a href="https://www.facebook.com/?locale=ar_AR"> <i class='bx bxl-facebook' style="--vlr:8"></i>
+                </a> <i class='bx bxl-youtube' style="--vlr:9"></i>
             </div>
         </div>
         <img src="WhatsApp_Image_2024-06-07_at_05.27.42_cdc51f7b-removebg-preview.png" alt="">
@@ -51,15 +80,16 @@
         <h2 class="title">About <span>Me</span></h2>
         <img src="WhatsApp_Image_2024-06-07_at_05.27.42_cdc51f7b-removebg-preview.png" alt="" class="aboutImg">
         <div class="text-content2">
-            <h2>Frontend Developer</h2>
-            <p>A proficient Front-End Developer with extensive experience in creating dynamic and responsive web
-                applications. Skilled in HTML, CSS,
-                and JavaScript, and adept at using frameworks like React and Angular to build scalable solutions.
-                Committed to delivering high-quality code and enhancing user engagement through seamless
-                interface designs. Continuously learning and adapting to new technologies, ensuring the best practices
-                in web development are followed.</p>
-            <button class="btn">Read More</button>
-        </div>
+  <h2 class="job-title" aria-label="Frontend Developer">Frontend Developer</h2>
+  <p>
+    A proficient Front-End Developer with extensive experience in creating dynamic and responsive web applications.
+    Skilled in HTML, CSS, and JavaScript, and adept at using frameworks like React and Angular to build scalable solutions.
+    Committed to delivering high-quality code and enhancing user engagement through seamless interface designs.
+    Continuously learning and adapting to new technologies, ensuring best practices in web development.
+  </p>
+<button class="btn" onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })">Read More</button>
+</div>
+
     </section>
     <!-- *************************Education Section************************* -->
     <section class="education" id="education">
@@ -216,7 +246,7 @@
             <p>Copyright @ 2024 by Mustafa Hemdan</p>
             <h2>00201553947102</h2>
         </div>
-<a href="#top" id="scrollTopBtn"><i class='bx bx-up-arrow-alt'></i></a>
+        <a href="#top" id="scrollTopBtn"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
     <script src="script.js"></script>
 </body>
